@@ -1,0 +1,35 @@
+2025-06-24T09:39:04.276Z [INFO]: Added item 'item1' to cart
+2025-06-24T09:39:04.294Z [INFO]: Removed item 'item1' from cart
+2025-06-24T09:39:04.299Z [WARN]: Attempted to update non-existent item 'item1'
+2025-06-24T09:39:04.305Z [ERROR]: Invalid item data received for add
+2025-06-24T09:39:04.308Z [ERROR]: Invalid item data received for add
+PASS ./cart.test.js
+  Cart Operations (Unit)
+    ✓ should add an item to the cart (3 ms)
+    ✓ should remove an item from the cart (1 ms)
+    ✓ should update item quantity in the cart (1 ms)
+    ✓ should calculate total price with tax
+    ✓ should not allow negative quantities (8 ms)
+    ✓ should not allow invalid item IDs (1 ms)
+    ✓ should handle removing non-existent items gracefully
+    ✓ should handle updating quantity for non-existent items
+  Cart API (Integration)
+    ✓ POST /cart/add should add item to cart (35 ms)
+    ✓ POST /cart/remove should remove item from cart (14 ms)
+    ✓ POST /cart/update should update item quantity (4 ms)
+    ✓ GET /cart should return cart contents and total (2 ms)
+    ✓ POST /cart/add with negative quantity should return 400 (3 ms)
+    ✓ POST /cart/add with invalid item should return 400 (4 ms)
+
+----------|---------|----------|---------|---------|-----------------------------------------------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                         
+----------|---------|----------|---------|---------|-----------------------------------------------------------
+All files |   71.42 |    69.44 |   72.22 |   74.69 |                                                           
+ app.js   |   66.66 |    16.66 |       0 |   66.66 | 10,14-16                                                  
+ cart.js  |   72.15 |       80 |   81.25 |   76.05 | 59-60,75-76,96-98,138-139,152-153,164-165,170-171,185-186 
+----------|---------|----------|---------|---------|-----------------------------------------------------------
+Test Suites: 1 passed, 1 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        0.78 s, estimated 1 s
+Ran all test suites.

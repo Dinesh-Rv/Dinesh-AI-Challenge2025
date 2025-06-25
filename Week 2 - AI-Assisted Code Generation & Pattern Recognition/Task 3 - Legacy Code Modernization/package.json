@@ -1,0 +1,17 @@
+{
+  "name": "user-service-modernized",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "userService.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "joi": "^17.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,48 @@
+# Test Log Documentation
+
+This document contains the log output from running all Jest test cases for the Shopping Cart API project.
+
+---
+
+## Test Run Log
+
+```
+> shopping-cart-api@1.0.0 test
+> jest
+
+2025-06-24T09:36:59.673Z [INFO]: Added item 'item1' to cart
+2025-06-24T09:36:59.689Z [INFO]: Removed item 'item1' from cart
+2025-06-24T09:36:59.693Z [WARN]: Attempted to update non-existent item 'item1'
+2025-06-24T09:36:59.700Z [ERROR]: Invalid item data received for add
+2025-06-24T09:36:59.703Z [ERROR]: Invalid item data received for add
+PASS ./cart.test.js
+  Cart Operations (Unit)
+    ✓ should add an item to the cart (3 ms)
+    ✓ should remove an item from the cart (2 ms)
+    ✓ should update item quantity in the cart (1 ms)
+    ✓ should calculate total price with tax (1 ms)
+    ✓ should not allow negative quantities (6 ms)
+    ✓ should not allow invalid item IDs
+    ✓ should handle removing non-existent items gracefully
+    ✓ should handle updating quantity for non-existent items
+  Cart API (Integration)
+    ✓ POST /cart/add should add item to cart (38 ms)
+    ✓ POST /cart/remove should remove item from cart (9 ms)
+    ✓ POST /cart/update should update item quantity (5 ms)
+    ✓ GET /cart should return cart contents and total (4 ms)
+    ✓ POST /cart/add with negative quantity should return 400 (2 ms)
+    ✓ POST /cart/add with invalid item should return 400 (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        0.679 s
+Ran all test suites.
+```
+
+---
+
+## Summary
+- All 14 test cases passed successfully (unit and integration).
+- Winston logging output is included, showing info, warning, and error logs for cart operations and validation.
+- The application is working as expected and passes all defined tests. 

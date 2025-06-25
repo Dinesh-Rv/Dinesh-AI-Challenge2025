@@ -1,0 +1,19 @@
+{
+  "name": "sales-data-processor",
+  "version": "1.0.0",
+  "description": "Sales data processing utility with validation and tests",
+  "main": "convertedCode.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "joi": "^17.0.0",
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+} 
