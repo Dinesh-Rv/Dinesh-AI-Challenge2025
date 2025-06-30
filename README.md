@@ -31,3 +31,13 @@ This repository contains the complete implementation of the AI-Driven Developmen
   - Increased test coverage for legacy codebases.
   - Provided coverage and code quality reports.
 - **Task 3: Edge Case Discovery**
+  - Added comprehensive edge case testing for payment processing and financial calculations.
+  - Included security, production failure, and financial calculation test reports.
+  - Provided detailed test coverage reports and implementation code for PaymentProcessor module.
+
+### Week 4 - AI-Driven Code Review & Refactoring Challenge
+
+- **Task 1: Capstone Project Challenge**
+  - Performed code review and refactoring on the Gilded Rose kata project.
+  - Added extensive test coverage and performance audits.
+  - Included legacy code analysis and detailed documentation of improvements.
